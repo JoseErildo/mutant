@@ -20,7 +20,8 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.status(200).sendFile(__dirname + "/index.html").end();
+
 });
 
 // Start the server
